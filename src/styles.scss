@@ -1,0 +1,13 @@
+@import "scss/colors";
+@import "scss/input";
+@import "scss/buttons";
+@import "scss/card";
+@import "scss/structure";
+
+body {
+  background-color: $skirmish_grey;
+}
+
+.spacer {
+  height: 100px;
+}

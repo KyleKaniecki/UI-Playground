@@ -1,0 +1,38 @@
+form {
+  .input-group {
+    width: auto;
+    position: relative;
+    margin: 3px;
+    border-radius: 5px;
+    input {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background-color: transparent;
+    }
+  }
+}
+
+input.skirmish-input {
+  border: none;
+  border-bottom: 2px solid $skirmish_teal;
+  overflow: hidden;
+
+  // Original state of the placeholder text
+  &::placeholder {
+    color: black;
+    transform: translateY(0);
+    transition-duration: .3s;
+  }
+
+  // Input state when clicked
+  &:focus {
+    outline: none;
+
+    // Placeholder text state when clicked
+    &::placeholder {
+      transform: translateY(-100%);
+      transition-duration: .3s;
+      opacity: 0;
+    }
+  }
+}

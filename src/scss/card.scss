@@ -1,0 +1,48 @@
+div.card {
+  margin: 5px;
+  color: white;
+  min-height: 100px;
+  min-width: 100px;
+  background-color: lighten($skirmish_grey, 10);
+  border-radius: 5px;
+  padding: 1px;
+  box-shadow: 5px 5px 20px -3px lighten(black, 5);
+
+  & > div.card-header {
+    background-color: transparent;
+    padding: 5px;
+    border-bottom: 1px solid $skirmish_grey;
+    min-height: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    & > h3 {
+      color: white;
+      margin: 2px;
+    }
+  }
+
+  & > div.card-body {
+    min-height: 80px;
+    width: auto;
+    background-color: lighten($skirmish_grey, 20);
+    padding: 5px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $skirmish_grey;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  & > div.card-footer {
+    min-height: 10px;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+}

@@ -1,0 +1,25 @@
+button.skirmish-button {
+  background-color: $skirmish_teal;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid $skirmish_teal;
+  padding: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+
+  // Transitions
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+
+  &:active {
+    background-color: lighten($skirmish_teal, 5);
+    border-color: lighten($skirmish_teal, 5);
+    outline: none;
+    box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.5);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
